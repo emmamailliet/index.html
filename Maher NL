@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nederlands — Maher</title>
+<style>:root{--bg:#F7F6F1;--surface:#fff;--surface2:#F0EEE7;--border:#E3DFD5;--text:#18170F;--muted:#6B6758;--hint:#ACA89E;--accent:#2D5A8E;--al:#E8F0FA;--at:#1A3D63;--green:#2A6B4A;--gl:#E4F5EC;--red:#8B2E2E;--rl:#FAE8E8;--amber:#7A4F1A;--ambl:#FDF3E3;--purple:#4A3580;--pl:#EFECFA;--teal:#1A5E52;--tl:#E2F4F0;--pink:#7A2E55;--pkl:#FAE8F2;--r:14px;--rsm:8px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px;line-height:1.6}.header{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:0;z-index:100;display:flex;align-items:stretch;justify-content:space-between}.logo{font-family:'Georgia',serif;font-size:17px;font-weight:700;padding:16px 0;letter-spacing:-.3px;cursor:pointer}.logo span{color:var(--accent)}.nav{display:flex;gap:0}.nb{font-family:system-ui,-apple-system,sans-serif;font-size:13px;font-weight:500;padding:0 14px;border:none;background:none;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .18s;position:relative;bottom:-1px}.nb:hover{color:var(--text)}.nb.active{color:var(--accent);border-bottom-color:var(--accent)}.main{max-width:760px;margin:0 auto;padding:32px 20px 80px}.view{display:none}.view.active{display:block}.home-hero{margin-bottom:32px}.home-hero h1{font-family:'Georgia',serif;font-size:32px;font-weight:800;line-height:1.2;margin-bottom:8px;letter-spacing:-.5px}.home-hero p{font-size:15px;color:var(--muted);max-width:500px}.journey{display:flex;flex-direction:column;gap:0}.jstep{display:flex;gap:0;position:relative}.jline{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}.jdot{width:36px;height:36px;border-radius:50%;border:2px solid var(--border);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:16px;z-index:1;transition:all .3s;flex-shrink:0}.jdot.done{background:var(--green);border-color:var(--green);color:#fff}.jdot.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 0 4px var(--al)}.jconnect{width:2px;background:var(--border);flex:1;min-height:16px;transition:background .3s}.jconnect.done{background:var(--green)}.jcontent{flex:1;padding:0 0 28px 16px;min-width:0}.jcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;transition:border-color .2s,box-shadow .2s}.jcard.active-card{border-color:var(--accent);box-shadow:0 2px 12px rgba(45,90,142,.1)}.jcard.done-card{border-color:#8BC9A6}.jcard-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:4px}.jcard-title{font-family:'Georgia',serif;font-size:15px;font-weight:600}.jcard-badge{font-size:11px;font-weight:500;padding:2px 9px;border-radius:20px}.badge-todo{background:var(--surface2);color:var(--muted)}.badge-active{background:var(--al);color:var(--at)}.badge-done{background:var(--gl);color:var(--green)}.jcard-sub{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px}.jcard-progress{margin-bottom:12px}.jcard-pbar-bg{height:4px;background:var(--border);border-radius:2px}.jcard-pbar-fill{height:4px;border-radius:2px;transition:width .4s}.jcard-pct{font-size:11px;color:var(--muted);margin-top:3px}.jcard-chapters{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.jch-row{display:flex;align-items:center;gap:8px;font-size:13px}.jch-icon{font-size:14px;width:24px;text-align:center;flex-shrink:0}.jch-name{flex:1;color:var(--muted)}.jch-pbar-bg{width:80px;height:3px;background:var(--border);border-radius:2px;flex-shrink:0}.jch-pbar-fill{height:3px;border-radius:2px;transition:width .4s}.jch-pct{font-size:11px;color:var(--muted);min-width:28px;text-align:right}.jbtn{font-size:13px;font-weight:500;padding:8px 18px;border-radius:9px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:all .15s;font-family:system-ui,-apple-system,sans-serif}.jbtn:hover{background:var(--surface2);border-color:#C8C4B8}.jbtn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}.jbtn.primary:hover{background:#333}.jbtn.green{background:var(--green);color:#fff;border-color:var(--green)}.finish-card{background:var(--surface);border:2px solid var(--green);border-radius:var(--r);padding:24px;text-align:center}.finish-title{font-family:'Georgia',serif;font-size:22px;font-weight:700;margin-bottom:6px}.finish-sub{font-size:14px;color:var(--muted)}.search-wrap{position:relative;margin-bottom:16px}.si{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:14px;font-family:system-ui,-apple-system,sans-serif;outline:none;transition:border-color .15s}.si:focus{border-color:#B8B4A8}.slabel{font-family:'Georgia',serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin:28px 0 12px}.slabel:first-child{margin-top:0}.concept{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px 18px;margin-bottom:8px;cursor:pointer;transition:border-color .15s,box-shadow .15s}.concept:hover{border-color:#C8C4B8;box-shadow:0 2px 8px rgba(0,0,0,.05)}.concept.known{border-left:3px solid var(--green)}.ch2{display:flex;align-items:center;gap:10px}.cicon{font-size:18px;flex-shrink:0}.tag{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;flex-shrink:0}.tb{background:var(--al);color:var(--at)}.ta{background:var(--ambl);color:var(--amber)}.tg{background:var(--gl);color:var(--green)}.tp{background:var(--pkl);color:var(--pink)}.tpu{background:var(--pl);color:var(--purple)}.tr{background:var(--rl);color:var(--red)}.tt{background:var(--tl);color:var(--teal)}.cterm{font-size:15px;font-weight:500;flex:1}.known-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;display:none}.concept.known .known-dot{display:block}.cchev{color:var(--hint);font-size:14px;transition:transform .2s;flex-shrink:0}.cchev.open{transform:rotate(90deg)}.cbody{display:none;font-size:14px;color:var(--muted);line-height:1.65;padding-top:10px;margin-top:10px;border-top:1px solid var(--border)}.cbody.open{display:block}.cbody ul{padding-left:18px;margin-top:4px}.cbody li{margin-bottom:4px}.cbody table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}.cbody td,.cbody th{border:1px solid var(--border);padding:6px 10px;text-align:left}.cbody th{font-weight:500;background:var(--surface2)}.cbody .tip{background:var(--al);border:1px solid #B8D0ED;border-radius:8px;padding:10px 14px;margin-top:10px;font-size:13px;color:var(--at)}.cbody .example{background:var(--surface2);border-radius:8px;padding:10px 14px;margin-top:8px;font-size:13px;font-style:italic}.pill{display:inline-block;background:var(--ambl);color:var(--amber);padding:2px 8px;border-radius:6px;font-weight:500;font-size:13px;font-family:'Georgia',serif}.mark-known{font-size:12px;padding:5px 12px;border-radius:8px;border:1px solid var(--gl);background:var(--gl);color:var(--green);cursor:pointer;margin-top:10px;font-family:system-ui,-apple-system,sans-serif;transition:all .15s}.mark-known:hover{background:#D0EDDB}.mark-known.marked{background:var(--green);color:#fff;border-color:var(--green)}.illus{margin-top:12px;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:var(--surface)}.fcc{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}.fbar{display:flex;gap:6px;flex-wrap:wrap}.fb{font-size:12px;font-weight:500;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;transition:all .15s;font-family:system-ui,-apple-system,sans-serif}.fb.active{background:var(--text);color:var(--bg);border-color:var(--text)}.pbar{height:3px;background:var(--border);border-radius:2px;margin-bottom:22px}.pfill{height:3px;background:var(--accent);border-radius:2px;transition:width .35s}.fccard{background:var(--surface);border:1px solid var(--border);border-radius:20px;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.5rem 2rem;text-align:center;cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .15s;margin-bottom:18px;user-select:none}.fccard:hover{border-color:#C8C4B8;box-shadow:0 4px 16px rgba(0,0,0,.07)}.fccard:active{transform:scale(.99)}.fcside{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--hint);margin-bottom:14px;font-family:'Georgia',serif}.fcterm{font-family:'Georgia',serif;font-size:22px;font-weight:600;line-height:1.3;margin-bottom:6px}.fcdef{font-size:14px;color:var(--muted);line-height:1.65;display:none}.fcdef.show{display:block}.fchint{font-size:12px;color:var(--hint);margin-top:10px}.fcbtns{display:flex;gap:10px;justify-content:center}.fca{font-size:14px;font-weight:500;padding:10px 28px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:all .15s;font-family:system-ui,-apple-system,sans-serif}.fca.knew{background:var(--gl);border-color:#8BC9A6;color:var(--green)}.fca.retry{background:var(--rl);border-color:#E0A0A0;color:var(--red)}.fcdone{text-align:center;padding:3rem 2rem;background:var(--surface);border:1px solid var(--border);border-radius:20px}.fcdone .big{font-family:'Georgia',serif;font-size:48px;font-weight:700;margin-bottom:8px}.fcdone p{font-size:15px;color:var(--muted);margin-bottom:20px}.btn{font-size:14px;font-weight:500;font-family:system-ui,-apple-system,sans-serif;padding:10px 22px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:all .15s}.btn:hover{background:var(--surface2);border-color:#C8C4B8}.qhr{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.qnum{font-size:13px;color:var(--muted)}.qscore{font-size:13px;font-weight:500}.qq{font-family:'Georgia',serif;font-size:18px;font-weight:600;line-height:1.4;margin-bottom:20px}.qopts{display:grid;gap:8px;margin-bottom:18px}.qopt{font-size:14px;font-family:system-ui,-apple-system,sans-serif;padding:13px 18px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;text-align:left;transition:all .15s;line-height:1.4}.qopt:hover:not(:disabled){border-color:#C8C4B8;background:var(--surface2)}.qopt:disabled{cursor:default}.qopt.correct{background:var(--gl);border-color:#8BC9A6;color:var(--green);font-weight:500}.qopt.wrong{background:var(--rl);border-color:#E0A0A0;color:var(--red)}.qfb{font-size:14px;padding:12px 16px;border-radius:10px;margin-bottom:16px;line-height:1.55;display:none;border:1px solid}.qfb.show{display:block}.qfb.ok{background:var(--gl);color:var(--green);border-color:#8BC9A6}.qfb.nok{background:var(--rl);color:var(--red);border-color:#E0A0A0}.qnext{font-size:14px;font-weight:500;font-family:system-ui,-apple-system,sans-serif;padding:10px 24px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:all .15s;display:none}.qnext.show{display:inline-block}.qnext:hover{background:var(--surface2)}.qresult{text-align:center;padding:3rem 2rem;background:var(--surface);border:1px solid var(--border);border-radius:20px}.qsb{font-family:'Georgia',serif;font-size:56px;font-weight:700;line-height:1;margin-bottom:6px}.qsp{font-size:15px;color:var(--muted);margin-bottom:24px}.dictee-intro{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}.dictee-game{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2rem;text-align:center}.dwd{font-family:'Georgia',serif;font-size:48px;font-weight:700;margin-bottom:8px;letter-spacing:2px;min-height:60px;transition:opacity .4s}.dwd.hidden{opacity:0;user-select:none}.dh{font-size:13px;color:var(--hint);margin-bottom:24px;min-height:20px}.di{font-family:'Georgia',serif;font-size:22px;font-weight:500;text-align:center;padding:12px 20px;border-radius:12px;border:2px solid var(--border);background:var(--bg);color:var(--text);outline:none;width:100%;max-width:300px;transition:border-color .15s}.di:focus{border-color:var(--accent)}.di.correct{border-color:var(--green);background:var(--gl)}.di.wrong{border-color:var(--red);background:var(--rl)}.dfb{font-size:15px;margin-top:12px;min-height:24px;font-weight:500}.dfb.ok{color:var(--green)}.dfb.nok{color:var(--red)}.dbtns{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}.dp2{display:flex;justify-content:center;gap:6px;margin-bottom:24px;flex-wrap:wrap}.dp{width:10px;height:10px;border-radius:50%;background:var(--border)}.dp.ok2{background:var(--green)}.dp.nok2{background:var(--red)}.dp.cur{background:var(--accent)}.retry-pips{display:flex;gap:5px;justify-content:center;margin:8px 0 0}.retry-pip{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}.retry-pip.done{background:var(--green)}.retry-pip.cur{background:var(--amber)}.wrow{display:flex;gap:12px;padding:8px 4px;border-bottom:1px solid var(--border);font-size:14px}.wrow:last-child{border-bottom:none}.wt{font-weight:500;min-width:160px;flex-shrink:0}.wm{color:var(--muted)}.kofschip-letters{display:flex;gap:6px;justify-content:center;margin:12px 0;flex-wrap:wrap}.kl{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:500;cursor:pointer;transition:all .15s;border:1.5px solid;user-select:none;font-family:system-ui,-apple-system,sans-serif}.kl.te{background:var(--al);color:var(--at);border-color:#185FA5}.kl.de{background:var(--surface2);color:var(--muted);border-color:var(--border);cursor:default}.kl.active{transform:scale(1.12)}.kl.te.active{box-shadow:0 2px 10px rgba(45,90,142,.3)}.k-result{background:var(--surface2);border-radius:10px;padding:12px 16px;margin:8px 0;font-size:13px;min-height:52px}.k-examples{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.k-ex{font-size:12px;padding:4px 10px;border-radius:7px;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text);font-family:system-ui,-apple-system,sans-serif;transition:all .15s}.k-ex:hover{border-color:#B8B4A8}</style>
+</head>
+<body>
+<header class="header">
+<div class="logo" onclick="sw('home',document.querySelector('.nb'))">Ned<span>.</span></div>
+<nav class="nav">
+<button class="nb active" onclick="sw('home',this)">Home</button>
+<button class="nb" onclick="sw('theorie',this)">Theorie</button>
+<button class="nb" onclick="sw('flashcards',this)">Flashcards</button>
+<button class="nb" onclick="sw('quiz',this)">Quiz</button>
+<button class="nb" onclick="sw('dictee',this)">Dictee</button>
+<button class="nb" onclick="sw('woorden',this)">Woorden</button>
+</nav>
+</header>
+<main class="main">
+<div class="view active" id="view-home">
+<div class="home-hero"><h1 id="home-title">Klaar voor<br>je toets?</h1><p>Nederlands · H3 · 3.3 t/m 3.9 (min 3.4) · Havo/vwo</p></div>
+<div id="journey"></div>
+</div>
+<div class="view" id="view-theorie">
+<input class="si" id="theory-search" placeholder="Zoek een begrip..." style="margin-bottom:16px">
+<div id="tc"></div>
+</div>
+<div class="view" id="view-flashcards">
+<div class="fcc"><div class="fbar" id="fcfb"></div><div style="display:flex;gap:8px;align-items:center"><span style="font-size:13px;color:var(--muted)" id="fcc2"></span><button class="btn" onclick="shuffleFC()" style="font-size:12px;padding:6px 14px">Schudden</button></div></div>
+<div class="pbar"><div class="pfill" id="fcp"></div></div>
+<div id="fca2"></div>
+</div>
+<div class="view" id="view-quiz">
+<div class="fbar" id="qfb2" style="margin-bottom:16px"></div>
+<div id="qa"></div>
+</div>
+<div class="view" id="view-dictee">
+<div class="slabel" style="margin-top:0">Dicteewoorden oefenen</div>
+<p class="dictee-intro">Het woord verschijnt kort — onthoud het en typ het dan uit je hoofd. Typ je het fout? Dan moet je het 3x correct typen voor je verder mag!</p>
+<div class="dictee-game">
+<div class="dp2" id="dp2"></div>
+<div class="dwd" id="dwd"></div>
+<div class="dh" id="dh"></div>
+<input class="di" id="di" placeholder="typ hier..." autocomplete="off" autocorrect="off" spellcheck="false">
+<div class="dfb" id="dfb"></div>
+<div class="dbtns" id="dbtns"></div>
+<div style="font-size:13px;color:var(--muted);margin-top:16px" id="ds"></div>
+</div>
+</div>
+<div class="view" id="view-woorden">
+<div class="slabel" style="margin-top:0">Schooltaalwoorden</div>
+<input class="si" id="ss" placeholder="Zoek een schooltaalwoord..." style="margin-bottom:10px" oninput="fw('ss','sl',stw)">
+<div id="sl"></div>
+<div class="slabel">Woordenlijst 3.5</div>
+<input class="si" id="ws" placeholder="Zoek een woord..." style="margin-bottom:10px" oninput="fw('ws','wl',wl35)">
+<div id="wl"></div>
+</div>
+</main>
+<script>
+const ILLUS = {
+tekstopbouw: `<svg width="100%" viewBox="0 0 680 360" style="display:block">
+<rect x="250" y="28" width="180" height="290" rx="6" fill="none" stroke="#E3DFD5" stroke-width="0.5"/>
+<polygon points="400,28 430,28 430,54 400,54" fill="none" stroke="#E3DFD5" stroke-width="0.5"/>
+<line x1="400" y1="28" x2="430" y2="54" stroke="#E3DFD5" stroke-width="0.5"/>
+<rect x="250" y="28" width="180" height="72" rx="6" fill="#E8F0FA" stroke="#185FA5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="500" fill="#1A3D63" x="340" y="59" text-anchor="middle" dominant-baseline="central">Inleiding</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#2D5A8E" x="340" y="79" text-anchor="middle" dominant-baseline="central">onderwerp afleiden</text>
+<rect x="250" y="104" width="180" height="140" fill="#E2F4F0" stroke="#0F6E56" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="500" fill="#085041" x="340" y="165" text-anchor="middle" dominant-baseline="central">Kern</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#1A5E52" x="340" y="185" text-anchor="middle" dominant-baseline="central">langste deel · deelonderwerpen</text>
+<rect x="250" y="248" width="180" height="70" rx="6" fill="#FDF3E3" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="500" fill="#633806" x="340" y="275" text-anchor="middle" dominant-baseline="central">Slot</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#7A4F1A" x="340" y="295" text-anchor="middle" dominant-baseline="central">samenvatting · geen nieuwe info</text>
+<line x1="248" y1="64" x2="196" y2="64" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="190" y="64" text-anchor="end" dominant-baseline="central">Inleiding</text>
+<line x1="248" y1="174" x2="196" y2="174" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="190" y="174" text-anchor="end" dominant-baseline="central">Kern</text>
+<line x1="248" y1="283" x2="196" y2="283" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="190" y="283" text-anchor="end" dominant-baseline="central">Slot</text>
+<line x1="432" y1="64" x2="470" y2="64" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<line x1="432" y1="174" x2="470" y2="174" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<line x1="470" y1="64" x2="470" y2="174" stroke="#ACA89E" stroke-width="0.5"/>
+<line x1="470" y1="119" x2="486" y2="119" stroke="#ACA89E" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="490" y="119" dominant-baseline="central">tweedeling</text>
+<line x1="432" y1="64" x2="532" y2="64" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<line x1="432" y1="174" x2="532" y2="174" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<line x1="432" y1="283" x2="532" y2="283" stroke="#ACA89E" stroke-width="0.5" stroke-dasharray="3,3"/>
+<line x1="532" y1="64" x2="532" y2="283" stroke="#ACA89E" stroke-width="0.5"/>
+<line x1="532" y1="173" x2="548" y2="173" stroke="#ACA89E" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="552" y="173" dominant-baseline="central">driedeling</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#ACA89E" x="340" y="340" text-anchor="middle">Nieuwsbericht = tweedeling · Artikel / essay = driedeling</text>
+</svg>`,
+kernzin: `<svg width="100%" viewBox="0 0 680 300" style="display:block">
+<rect x="40" y="26" width="170" height="38" rx="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="500" fill="#633806" x="125" y="45" text-anchor="middle" dominant-baseline="central">Kernzin (eerste zin)</text>
+<rect x="40" y="70" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="125" y="86" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="40" y="108" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="125" y="124" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="40" y="146" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="125" y="162" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#ACA89E" x="125" y="202" text-anchor="middle">Meest voorkomend</text>
+<rect x="255" y="26" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="340" y="42" text-anchor="middle" dominant-baseline="central">Inleiding op onderwerp</text>
+<rect x="255" y="64" width="170" height="38" rx="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="500" fill="#633806" x="340" y="83" text-anchor="middle" dominant-baseline="central">Kernzin (tweede zin)</text>
+<rect x="255" y="108" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="340" y="124" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="255" y="146" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="340" y="162" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#ACA89E" x="340" y="202" text-anchor="middle">Minder gebruikelijk</text>
+<rect x="470" y="26" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="555" y="42" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="470" y="64" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="555" y="80" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="470" y="102" width="170" height="32" rx="4" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="555" y="118" text-anchor="middle" dominant-baseline="central">Uitleg of voorbeeld</text>
+<rect x="470" y="140" width="170" height="38" rx="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="500" fill="#633806" x="555" y="159" text-anchor="middle" dominant-baseline="central">Kernzin (laatste zin)</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#ACA89E" x="555" y="202" text-anchor="middle">Conclusie-stijl</text>
+<rect x="280" y="228" width="14" height="14" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="300" y="235" dominant-baseline="central">= kernzin</text>
+<rect x="380" y="228" width="14" height="14" rx="3" fill="#F0EEE7" stroke="#E3DFD5" stroke-width="0.5"/>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6B6758" x="400" y="235" dominant-baseline="central">= uitleg / voorbeeld</text>
+<text font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#ACA89E" x="340" y="275" text-anchor="middle">De kernzin is de belangrijkste zin — de rest werkt het uit.</text>
+</svg>`,
+kofschip: `<div style="padding:16px;font-family:system-ui,-apple-system,sans-serif" data-kofschip="1">
+<div class="kl-row" style="display:flex;gap:6px;justify-content:center;margin-bottom:14px;flex-wrap:wrap"></div>
+<div class="kl-res" style="background:#F0EEE7;border-radius:10px;padding:12px 16px;margin:0 0 10px;font-size:13px;color:#6B6758;min-height:50px">Klik op een letter of kies een werkwoord</div>
+<div class="kl-exrow" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+<div style="font-size:11px;color:#ACA89E;text-align:center;margin-top:8px">Stam bepaalt -te/-de · ik-vorm is de basis</div>
+</div>`
+};
+const chapters=[
+{id:'33f',label:'3.3 Fictie & spanning',tag:'tb',icon:'📖',color:'#2D5A8E',concepts:[
+{t:'Spanning',icon:'⚡',d:'Een verhaal heeft spanning als je steeds verder wilt lezen. Het roept vragen op — hoe nieuwsgieriger je bent, hoe groter de spanning.',tip:'Spanning houdt lezers geboeid — het is de motor van een verhaal.',ex:'Je leest een detective en wilt weten wie de moordenaar is.'},
+{t:'Spanningsvraag',icon:'❓',d:'Een vraag die spanning opwekt. <ul><li><strong>Groot:</strong> geldt voor het hele verhaal — bijv. "wie heeft het gedaan?" of "krijgen ze elkaar?"</li><li><strong>Klein:</strong> geldt voor slechts een deel — bijv. "Die avond wachtte Sasha een grote verrassing."</li></ul>',tip:'De grote spanningsvraag wordt pas beantwoord in de ontknoping.'},
+{t:'Ontknoping',icon:'🔓',d:'Het antwoord op de <em>grote</em> spanningsvraag die voor het hele verhaal geldt. Het moment waarop de spanning opgelost wordt.',tip:'Zonder ontknoping blijft een verhaal onbevredigend.'},
+{t:'Cliffhanger',icon:'🌊',d:'Als een hoofdstuk of aflevering eindigt op een heel spannend moment, zodat je door wil lezen. De spanning wordt bewust niet opgelost.',ex:'Een hoofdstuk eindigt: "Ze hoorde voetstappen achter zich — en toen ging het licht uit."'},
+{t:'Karakterontwikkeling',icon:'🌱',d:'Als een personage <em>verandert</em> in de loop van het verhaal door wat hij meemaakt, denkt of zegt.',tip:'Karakterontwikkeling maakt een personage geloofwaardig en interessant.'},
+{t:'Round character',icon:'🔮',d:'Personage <strong>met</strong> karakterontwikkeling.<ul><li>Heeft meerdere eigenschappen</li><li>Reageert niet altijd op dezelfde manier</li><li>Hoofdpersoon is meestal een round character</li></ul>',ex:'Harry Potter groeit van onzeker jongetje tot zelfverzekerde held.'},
+{t:'Flat character',icon:'📌',d:'Personage <strong>zonder</strong> karakterontwikkeling.<ul><li>Heeft weinig of maar één eigenschap</li><li>Reageert altijd voorspelbaar</li><li>Bijpersonen zijn meestal flat characters</li></ul>',ex:'De "gemene stiefmoeder" in sprookjes — altijd slecht, nooit veranderend.'},
+{t:'Versregel',icon:'📝',d:'Een afzonderlijke regel in een gedicht. De dichter bepaalt waar de regel stopt — niet per se op een punt.',tip:'Versregels kunnen heel kort zijn (één woord) of heel lang.'},
+{t:'Strofe',icon:'📋',d:'Een groepje versregels in een gedicht, gescheiden door een witregel. Vergelijkbaar met een alinea in proza.<ul><li>Elke strofe heeft soms een eigen deelonderwerp</li><li>Sommige dichters gebruiken strofen van gelijke grootte voor regelmaat</li></ul>',tip:'Tel de witregels om het aantal strofen te tellen.'},
+]},
+{id:'33l',label:'3.3 Lezen',tag:'ta',icon:'📄',color:'#7A4F1A',concepts:[
+{t:'Tekstopbouw',icon:'🏗️',d:'De logische volgorde van informatie in een tekst.<br><br><strong>Tweedeling:</strong> inleiding – kern (bijv. nieuwsbericht)<br><strong>Driedeling:</strong> inleiding – kern – slot (bijv. artikel)',tip:'Als je een tekst verkennend leest, kun je de opbouw al herkennen.',illus:'tekstopbouw'},
+{t:'Inleiding',icon:'🚪',d:'Het eerste deel van een tekst. Bevat bijna altijd informatie waaruit je het onderwerp kunt afleiden. Kan een samenvatting geven of een vraag stellen.',tip:'Lees altijd eerst de inleiding om te weten waar de tekst over gaat.'},
+{t:'Kern',icon:'🍎',d:'Het langste deel van de tekst. Behandelt het onderwerp uitgebreid. Je kunt er vaak deelonderwerpen in onderscheiden.',tip:'De kern bevat de meeste informatie en de hoofdzaken.'},
+{t:'Slot',icon:'🔒',d:'Het laatste deel. Bevat meestal een samenvatting of conclusie. <strong>Er staat geen nieuwe informatie in het slot.</strong>',tip:'Lees het slot om snel de conclusie van een tekst te begrijpen.'},
+{t:'Kernzin',icon:'⭐',d:'De belangrijkste zin van een alinea. De rest is uitleg of uitwerking. Kan staan als:<ul><li><strong>Eerste zin</strong> → meest voorkomend</li><li><strong>Tweede zin</strong> → eerste zin is dan een inleiding</li><li><strong>Laatste zin</strong> → de rest bouwt naar de conclusie toe</li></ul>',tip:'Vraag je af: welke zin kun je niet weglaten?',illus:'kernzin'},
+{t:'Hoofdgedachte',icon:'💡',d:'Het belangrijkste wat de schrijver over het onderwerp zegt.<br><br><table><tr><th>Kijk naar</th><th>Wat vind je er</th></tr><tr><td>Titel / inleiding</td><td>Soms samenvatting of een vraag</td></tr><tr><td>Kernzinnen kern</td><td>Deelgedachten samen</td></tr><tr><td>Slotalinea</td><td>Soms antwoord of conclusie</td></tr></table>',tip:'Formuleer de hoofdgedachte in één zin als antwoord op: wat wil de schrijver zeggen?'},
+{t:'Hoofdzaken',icon:'🎯',d:'Het belangrijkste wat over het onderwerp gezegd wordt. Noteer je bij een samenvatting.<ul><li>Onderscheid deelonderwerpen → kijk per deelonderwerp wat de hoofdzaak is</li><li>Gebruik de kernzinnen van de alinea\'s</li></ul>',tip:'Hoofdzaken = wat je moet weten. Bijzaken = de details.'},
+{t:'Bijzaken',icon:'🗑️',d:'De minder belangrijke informatie in een tekst. Voorbeelden, uitleg, details. Laat je weg bij een samenvatting.',ex:'"Honden zijn trouwe dieren [hoofdzaak]. Een bekend voorbeeld is Hachiko [bijzaak]."'},
+{t:'Verwijswoorden',icon:'👆',d:'Woorden die de schrijver gebruikt om herhaling te vermijden. Verwijzen bijna altijd naar iets eerder in de tekst.<br><br><strong>Veelvoorkomend:</strong> hij, zij, het, ze, dit, dat, deze, die<br><br><strong>Truc:</strong> stel een vraag met <em>wie, wat, waar</em> of <em>welk(e)</em>.',tip:'Zoek altijd terug in de tekst — verwijswoorden verwijzen bijna nooit vooruit.',ex:'"Mijn broer Willem spaart voor zijn rijbewijs. <u>Hij</u> wil rijles nemen." → Wie? → mijn broer Willem.'},
+]},
+{id:'35w',label:'3.5 Woorden',tag:'tg',icon:'💬',color:'#2A6B4A',concepts:[
+{t:'Tegenstelling',icon:'↔️',d:'Als twee woorden een tegengestelde betekenis hebben. Gebruik tegenstellingen om onbekende woorden te begrijpen.',tip:'Kijk of er een bekende tegenstelling in de buurt staat van het onbekende woord.',ex:'"De zaal was stil, maar daarna werd het oorverdovend lawaaierig." → stil ↔ lawaaierig'},
+{t:'Signaalwoorden tegenstelling',icon:'🚦',d:'Woorden die aangeven dat er een tegenstelling komt:<br><br><table><tr><th>Woord</th><th>Voorbeeld</th></tr><tr><td><em>maar</em></td><td>Afgezaagd, maar origineel.</td></tr><tr><td><em>daarentegen</em></td><td>Lokaal, andere zijn wijdverbreid.</td></tr><tr><td><em>juist</em></td><td>In theorie moeilijk, juist simpel.</td></tr><tr><td><em>in tegenstelling tot</em></td><td>Recent, in tegenstelling tot oud.</td></tr></table><br>Meer: <em>echter, evenwel, toch, in tegendeel, enerzijds…anderzijds, daar staat tegenover</em>'},
+{t:'Voorvoegsels tegenstelling',icon:'🔤',d:'<ul><li><strong>on-</strong> = niet: ongelukkig, onopmerkelijk</li><li><strong>non-</strong> = niet: non-verbaal, non-fictie</li><li><strong>niet-</strong> = niet: niet-roker</li><li><strong>anti-</strong> = tegen: antilichaam, antisociaal</li></ul>'},
+{t:'Achtervoegsel -loos',icon:'➖',d:'<strong>-loos</strong> = zonder<ul><li>emotieloos = zonder emoties</li><li>roekeloos = zonder voorzichtigheid</li><li>werkeloos = zonder werk</li><li>zinloos = zonder zin/doel</li></ul>',tip:'Als je het grondwoord kent, begrijp je de betekenis meteen.'},
+]},
+{id:'36s',label:'3.6 Spreken',tag:'tp',icon:'🎤',color:'#7A2E55',concepts:[
+{t:'Mondeling verslag',icon:'🎙️',d:'Je beschrijft mondeling wat je hebt meegemaakt of onderzocht. Doel: anderen <strong>informeren</strong> over feiten.<br><br><strong>Verschil met schriftelijk:</strong><ul><li>Korter</li><li>Beantwoord soms vragen van publiek</li></ul>Gebruik de <strong>5W1H-vragen</strong>: Wie? Wat? Waar? Wanneer? Waarom? Hoe?',tip:'Een mondeling verslag is een voorbeeld van een spreektaak. Een spreekbeurt is een ander voorbeeld.'},
+{t:'Spreekbeurt',icon:'🏆',d:'Een spreektaak waarbij je over een zelfgekozen onderwerp vertelt dat je hebt <em>uitgezocht</em>.<br><br><strong>Verschil met mondeling verslag:</strong><ul><li>Verslag = rapporteer iets wat je hebt <em>meegemaakt/onderzocht</em></li><li>Spreekbeurt = informeer over iets wat je hebt <em>uitgezocht</em></li></ul>Beide hebben dezelfde opbouw: inleiding – kern – slot.',tip:'Bij een spreekbeurt kies je zelf een onderwerp; bij een verslag rapporteer je over iets wat al is gebeurd.'},
+{t:'Signaalwoorden verslag',icon:'⏱️',d:'Gebruik deze woorden om feiten chronologisch te vertellen:<ul><li><strong>toen</strong> — geeft een moment aan</li><li><strong>daarna</strong> — geeft volgorde aan</li><li><strong>vervolgens</strong> — geeft volgende stap aan</li><li><strong>uiteindelijk</strong> — geeft eindresultaat aan</li></ul>',tip:'Signaalwoorden maken je verslag overzichtelijk en gemakkelijk te volgen.'},
+{t:'Opbouw mondeling verslag',icon:'📐',d:'<table><tr><th>Deel</th><th>Inhoud</th><th>Ezelsbruggetje</th></tr><tr><td><strong>Inleiding</strong></td><td>Binnenkomer + overzicht</td><td>"Zeg wat je gaat zeggen"</td></tr><tr><td><strong>Kern</strong></td><td>Deelonderwerpen + signaalwoorden</td><td>"Zeg het"</td></tr><tr><td><strong>Slot</strong></td><td>Samenvatting + vragen</td><td>"Zeg wat je hebt gezegd"</td></tr></table>'},
+{t:'Spreektaak uitvoeren',icon:'✅',d:'<strong>Voorbereiding:</strong><ul><li>Maak een spiekbriefje met kernwoorden</li><li>Schrijf de tekst NIET helemaal uit — anders ga je voorlezen</li></ul><strong>Tijdens:</strong><ul><li>Kijk je publiek aan (oogcontact)</li><li>Sta rechtop (houding)</li><li>Handen vrij voor gebaren</li><li>Spreek duidelijk, niet te snel</li></ul>'},
+{t:'Non-verbaal gedrag',icon:'🤝',d:'Alles wat je communiceert zonder woorden:<ul><li><strong>Oogcontact</strong> — houdt publiek betrokken</li><li><strong>Houding</strong> — rechtop = zelfvertrouwen</li><li><strong>Gebaren</strong> — ondersteunen je verhaal</li><li><strong>Spreektempo</strong> — niet te snel/langzaam</li><li><strong>Stemgebruik</strong> — varieer in toon en volume</li></ul>',tip:'Je lichaamstaal zegt soms meer dan je woorden!'},
+]},
+{id:'3738g',label:'3.7–3.8 Grammatica',tag:'tpu',icon:'✏️',color:'#4A3580',concepts:[
+{t:'Werkwoordelijk gezegde (wg)',icon:'⚙️',d:'Het onderwerp <em>doet</em> iets. Het werkwoord heeft een duidelijke, zelfstandige betekenis.',ex:'"Hij heeft erg hard gewerkt." → wg = heeft gewerkt (gewerkt = zww, heeft = hww)'},
+{t:'Naamwoordelijk gezegde (ng)',icon:'🔗',d:'Het werkwoord heeft <em>geen</em> duidelijke zelfstandige betekenis → aanvulling nodig (zn. of bn.).',tip:'Truc: kun je het werkwoord vervangen door worden/zijn/blijven? Dan is het een ng!',ex:'"Ik ben leraar op een middelbare school." → kww = ben · naamw. deel = leraar op... · ng = ben leraar...'},
+{t:'Zelfstandig werkwoord (zww)',icon:'💪',d:'Heeft een duidelijke betekenis en vormt het wg alleen of samen met hww\'s. In een wg met meerdere werkwoorden is er maar één zww.',ex:'"Zijn vader zingt." → zingt = zww<br>"Ik heb gevolgd." → gevolgd = zww, heb = hww'},
+{t:'Koppelwerkwoord (kww)',icon:'🔑',d:'Staat altijd in een naamwoordelijk gezegde. Koppelt het onderwerp aan het naamwoordelijk deel.<br><br><strong>Belangrijkste kww\'s: worden, zijn, blijven</strong>',tip:'Truc: kun je het werkwoord vervangen door zijn/worden/blijven? Dan is het een kww!'},
+{t:'Hulpwerkwoord (hww)',icon:'🛠️',d:'Helpt het zww of kww het gezegde vormen.<br><br><strong>hww + zww → wg:</strong> "Igor kan zingen." → kan = hww<br><strong>hww + kww → ng:</strong> "Sarah wil dokter worden." → wil = hww<br><br><em>Voorbeelden: hebben, zijn, worden, zullen, willen, kunnen, moeten</em><br><br>Meerdere hww\'s: "Hij zou beter willen kunnen zingen."'},
+{t:'Blijven: zww, hww of kww?',icon:'🔄',d:'<table><tr><th>Zin</th><th>Rol</th><th>Gezegde</th></tr><tr><td><em>Ze is thuis gebleven.</em></td><td>zww</td><td>wg = is gebleven</td></tr><tr><td><em>Ze blijft lachen.</em></td><td>hww</td><td>wg = blijft lachen</td></tr><tr><td><em>Ze is enthousiast gebleven.</em></td><td>kww</td><td>ng = is enthousiast gebleven</td></tr></table>',tip:'Vraag je af: doet het onderwerp iets (wg) of is/wordt/blijft het iets (ng)?'},
+]},
+{id:'39sp',label:'3.9 Spelling',tag:'tr',icon:'🔤',color:'#8B2E2E',concepts:[
+{t:'Zwakke werkwoorden',icon:'📏',d:'Ook: regelmatige of klankvaste werkwoorden. De klank van de stam blijft hetzelfde in de verleden tijd.',tip:'Zwak = regelmatig = klankvast. Tegenover sterk/onregelmatig (bijv. rijden→reed).'},
+{t:"'T KoFSCHiP X",icon:'⛵',d:'Ezelsbruggetje voor -te(n) of -de(n).<br><br><span class="pill">\'T KoFSCHiP X</span><br><br>Eindigt de stam op t, k, f, s, ch, p of x? → <strong>-te(n)</strong><br>Alle andere letters? → <strong>-de(n)</strong>',tip:'Gebruik de stam om te kiezen, maar de ik-vorm als basis.',illus:'kofschip'},
+{t:'pv-vt-zwak maken',icon:'📐',d:'<strong>Stap 1:</strong> Bepaal de stam (= ik-vorm tt)<br><strong>Stap 2:</strong> Kijk naar de laatste letter van de stam<br><strong>Stap 3:</strong> In \'T KoFSCHiP X? → -te(n) / anders → -de(n)<br><strong>Stap 4:</strong> Plak achter de ik-vorm<br><br><table><tr><th>Werkwoord</th><th>Stam</th><th>Letter</th><th>Ik-vorm</th><th>pv-vt</th></tr><tr><td>bedanken</td><td>bedank</td><td>k ✓</td><td>bedank</td><td>bedankte</td></tr><tr><td>relaxen</td><td>relax</td><td>x ✓</td><td>relax</td><td>relaxte</td></tr><tr><td>gooien</td><td>gooi</td><td>i ✗</td><td>gooi</td><td>gooide</td></tr><tr><td>verhuizen</td><td>verhuiz</td><td>z ✗</td><td>verhuis</td><td>verhuisde</td></tr></table>'},
+{t:'Meervoud op -ie',icon:'🔢',d:'<ul><li>Klemtoon op <strong>-ie</strong> → <strong>-ën</strong>: knie→knieën, melodie→melodieën</li><li>Klemtoon NIET op -ie → trema: bacterie→bacteriën, kolonie→koloniën</li></ul>',tip:'Het trema (¨) geeft aan dat de ë apart uitgesproken wordt.'},
+{t:'Meervoud op -ee',icon:'✌️',d:'-ee + <strong>-ën</strong>: zee→zeeën, idee→ideeën, fee→feeën'},
+{t:'Meervoud Latijnse woorden',icon:'🏛️',d:'<strong>Woorden op -(e)um:</strong> + -(e)a of -s<br>museum→musea of museums<br>datum→data of datums<br><br><strong>Woorden op -cus:</strong> + -ci<br>technicus→technici, politicus→politici'},
+]},
+];
+const qq=[
+{ch:'33f',q:'Wat is een spanningsvraag?',o:['Een vraag die spanning opwekt in een verhaal','Een retorische vraag van de schrijver','Een vraag na afloop van het verhaal','Een vraag zonder antwoord'],a:0,e:'Een spanningsvraag wekt nieuwsgierigheid — je wilt weten wat er gaat gebeuren.'},
+{ch:'33f',q:'Hoe heet het antwoord op de grote spanningsvraag?',o:['Cliffhanger','Climax','Ontknoping','Spanningsboog'],a:2,e:'De ontknoping beantwoordt de grote spanningsvraag van het hele verhaal.'},
+{ch:'33f',q:'Wat is een cliffhanger?',o:['Een personage dat valt','Een flashback','Een hoofdstuk dat eindigt op een spannend moment','Het moment dat spanning begint'],a:2,e:'Een cliffhanger laat je met vragen achter op het spannendste punt.'},
+{ch:'33f',q:'Welk type personage heeft karakterontwikkeling?',o:['Flat character','Bijpersoon','Nevenpersonage','Round character'],a:3,e:'Een round character verandert in de loop van het verhaal.'},
+{ch:'33f',q:'Wat kenmerkt een flat character?',o:['Veel eigenschappen','Karakterontwikkeling','Weinig eigenschappen, voorspelbaar','Altijd de hoofdpersoon'],a:2,e:'Een flat character heeft weinig/één eigenschap → voorspelbare reacties.'},
+{ch:'33f',q:'Wat is een strofe?',o:['Eén versregel','Titel van een gedicht','Rijmschema','Groepje versregels gescheiden door een witregel'],a:3,e:'Een strofe = groepje versregels. Vergelijkbaar met een alinea.'},
+{ch:'33l',q:'Wat staat er in de kern van een tekst?',o:['Samenvatting','Onderwerp — langste deel met deelonderwerpen','Inleiding','Altijd de conclusie'],a:1,e:'De kern is het langste deel en behandelt het onderwerp.'},
+{ch:'33l',q:'Wat staat er NIET in het slot?',o:['Samenvatting','Conclusie','Nieuwe informatie','Afsluiting'],a:2,e:'In het slot staat nooit nieuwe informatie.'},
+{ch:'33l',q:'Waar kan de kernzin staan?',o:['Altijd eerste zin','Altijd laatste zin','Alleen midden','Eerste, tweede of laatste zin'],a:3,e:'De kernzin kan op elke positie staan.'},
+{ch:'33l',q:'Hoe vind je waarnaar een verwijswoord verwijst?',o:['Volgende zin','Langste woord','Vraag met wie/wat/waar/welk(e)','Titel'],a:2,e:'"Hij wil rijles nemen." → Wie? → mijn broer Willem.'},
+{ch:'35w',q:'Welk signaalwoord wijst op een tegenstelling?',o:['dus','want','omdat','maar'],a:3,e:'"Maar" geeft aan dat wat volgt het tegenovergestelde is.'},
+{ch:'35w',q:'Wat betekent het voorvoegsel "on-"?',o:['Meer dan','Samen met','Niet of zonder','Heel erg'],a:2,e:'on-, non-, niet-, anti- = niet / geen / tegen.'},
+{ch:'35w',q:'Wat betekent het achtervoegsel "-loos"?',o:['Vol van','Met veel','Soms','Zonder'],a:3,e:'-loos = zonder. Emotieloos = zonder emotie.'},
+{ch:'36s',q:'Wat is de juiste opbouw van een mondeling verslag?',o:['Kern–slot–inleiding','Slot–kern–inleiding','Kern–inleiding–slot','Inleiding–kern–slot'],a:3,e:'Net als een geschreven tekst: inleiding, kern, slot.'},
+{ch:'36s',q:'Waarom schrijf je een spreektaak NIET helemaal uit?',o:['Te lang','Je vergeet het','Anders ga je voorlezen, wat onprettig is','Leraar wil het niet'],a:2,e:'Voorlezen is saai voor je publiek.'},
+{ch:'36s',q:'Wat is non-verbaal gedrag?',o:['Woorden die je kiest','Spreektempo','Lichaamstaal: oogcontact, houding, gebaren','Het spiekbriefje'],a:2,e:'Non-verbaal = alles wat je communiceert zonder woorden.'},
+{ch:'36s',q:'Wat is het verschil tussen een spreekbeurt en een mondeling verslag?',o:['Er is geen verschil','Spreekbeurt is altijd langer','Verslag = meegemaakt/onderzocht, spreekbeurt = uitgezocht onderwerp','Spreekbeurt heeft geen inleiding'],a:2,e:'Verslag = rapporteer iets wat je hebt meegemaakt/onderzocht. Spreekbeurt = informeer over iets dat je hebt uitgezocht.'},
+{ch:'3738g',q:'Welke zin heeft een werkwoordelijk gezegde?',o:['Hij is een goede leerling.','Ze blijft enthousiast.','De hond rent door de tuin.','Ik word leraar.'],a:2,e:'"Rent" heeft duidelijke betekenis en het onderwerp DOET iets → wg.'},
+{ch:'3738g',q:'Wat zijn de drie belangrijkste koppelwerkwoorden?',o:['hebben, zijn, doen','lopen, zitten, staan','worden, zijn, blijven','maken, geven, nemen'],a:2,e:'Worden, zijn en blijven koppelen het onderwerp aan een naamwoordelijk deel.'},
+{ch:'3738g',q:'In "Igor kan mooi zingen" — wat is het hulpwerkwoord?',o:['Igor','mooi','zingen','kan'],a:3,e:'"Kan" helpt het zelfstandig werkwoord "zingen" het gezegde vormen.'},
+{ch:'3738g',q:'Hoe herken je een naamwoordelijk gezegde?',o:['Onderwerp doet iets','Geen onderwerp','Werkwoord te vervangen door zijn/worden/blijven','Er staat een bijwoord in'],a:2,e:'Truc: "Ik ben leraar" → "Ik word/blijf leraar" → ng!'},
+{ch:'39sp',q:'Welke uitgang bij stam "bedank" (vt enkelvoud)?',o:['-de','-den','-ten','-te'],a:3,e:'k staat in \'T KoFSCHiP X → gebruik -te.'},
+{ch:'39sp',q:'Wat is de pv-vt-zwak van "verhuizen" (enkelvoud)?',o:['verhuisde','verhuiste','verhuizde','verhuisd'],a:0,e:'Stam = verhuiz, z ∉ KoFSCHiP → -de. Ik-vorm = verhuis → verhuisde.'},
+{ch:'39sp',q:'Wat is het meervoud van "idee"?',o:['idees','ideeen','ideeën','ideeen'],a:2,e:'Woorden op -ee krijgen -ën: idee → ideeën.'},
+{ch:'39sp',q:'Wat is het meervoud van "politicus"?',o:['politicussen','politici','politicusen','politicus\'s'],a:1,e:'Woorden op -cus krijgen -ci.'},
+{ch:'39sp',q:'Wat is het meervoud van "bacterie"?',o:['bacteries','bacterieën','bacteriën','bacterieen'],a:2,e:'Klemtoon NIET op -ie → trema: bacteriën.'},
+];
+const dictee=['akkoord','akte','cadeau','campagne','commentaar','dokter','creatief','confronteren','impact','locatie','lokaal','karakter','perfect','komedie','kritiek','kwaliteit','politicus','product','reactie','tactiek'];
+const stw=[['de aanwijzing','woorden uit de tekst die je helpen om het juiste antwoord te vinden'],['het advies','raad, tip'],['de afbeelding','plaatje, foto of tekening'],['analyseren','onderzoeken welke antwoorden goed en welke fout zijn'],['het auteursdossier','verzameling van informatie'],['baseren op','je mening of oordeel onderbouwen'],['het begrip','term'],['beoordelen','je mening geven'],['de bron','website, boek of blad waar een tekst te vinden is'],['de boodschap','bedoeling, wat je wilt zeggen'],['controleren','nakijken, vaststellen of een antwoord juist is'],['het doel','bedoeling van de schrijver van een tekst'],['het detail','minder belangrijk onderdeel van een tekst'],['het effect','invloed of uitwerking'],['de eigen ervaring','iets wat je zelf hebt meegemaakt'],['het ezelsbruggetje','geheugensteuntje, trucje waardoor je iets gemakkelijker snapt'],['formuleren','met woorden omschrijven'],['het fragment','een stukje uit een verhaal of tekst'],['de hoofdzaak','belangrijk onderdeel van een tekst'],['de indruk','eerste gedachte, gevoel'],['inhouden','betekenen'],['het kenmerk','belangrijke eigenschap'],['de kolom','verticale rij'],['de leertekst','tekst waarin iets uitgelegd wordt dat je moet kennen'],['markeren','onderstrepen, omcirkelen of met stift aanstrepen'],['noteren','opschrijven'],['omschrijven','op een andere manier zeggen'],['het onderdeel','gedeelte'],['onderscheiden','opmerken, zien'],['de paragraaf','een deel van een hoofdstuk'],['de reden','waarom je denkt dat iets zo is'],['regelmatig','vaak voorkomend'],['het register','lijst van begrippen'],['de samenhang','verband tussen stukjes tekst'],['het schema','kort overzicht, tabel'],['het signaal','aanwijzing, teken'],['de stelling','bewering waar je het wel of niet mee eens bent'],['de stof','leerstof, onderwerp'],['de strategie','manier van werken, hoe je iets aanpakt'],['de suggestie','idee, voorstel'],['de taak','grote opdracht'],['de term','begrip, woord'],['het thema','onderwerp dat regelmatig voorkomt'],['de theorie','leerstof'],['toelichten','uitleggen'],['toepassen','leerstof in een opdracht gebruiken'],['de uitkomst','resultaat'],['uitleggen','zeggen waarom je iets denkt of vindt'],['de uitspraak','iets wat iemand gezegd heeft'],['uitwerken','van een idee of mening een tekst maken'],['de uitwerking','tekst die je geschreven hebt'],['vergelijken met','naar overeenkomsten en verschillen zoeken'],['de verwachting','wat je denkt dat gaat gebeuren'],['in eigen woorden zeggen','omschrijven met andere woorden dan die uit de tekst'],['woordenschat','woorden die je kent en gebruikt']];
+const wl35=[['de aangifte','officiële melding van iets, bijv. bij de politie'],['de aard','het karakter, het wezen'],['de allochtoon','persoon die uit het buitenland komt, of wiens ouders uit het buitenland komen'],['baseren op','steunen op, als basis hebben, uitgaan van'],['bevestigend antwoorden','ja zeggen, ermee eens zijn'],['op begrip rekenen','erop vertrouwen dat mensen je begrijpen en accepteren'],['compact','weinig ruimte nodig hebbend'],['confronteren met','iemand iets laten weten dat hij liever niet weet of ziet'],['de cultuur','1) leefstijl van een samenleving; 2) vormen van kunst'],['het detail','klein onderdeel, bijzonderheid'],['de etiquette','regels voor wat beleefd is en wat niet'],['huidig','van dit moment, van nu'],['lokaal','1) plaatselijk; 2) (zn) kamer in een schoolgebouw'],['de observatie','waarneming'],['onder toeziend oog van','terwijl toegekeken wordt door'],['de ontheffing','toestemming om een regel niet te volgen, vrijstelling'],['in de praktijk','in werkelijkheid, in het echt'],['recent','kortgeleden, onlangs'],['de richtlijn','voorschrift over hoe je iets moet doen'],['geen strobreed in de weg leggen','op geen enkele manier tegenwerken'],['de traditie','oude gebruiken en gewoonten van een groep'],['verlenen','geven'],['weten hoe de vork in de steel zit','weten hoe het precies zit of gegaan is'],['iemand de wet voorschrijven','iemand zeggen wat hij moet doen'],['wijdverbreid','bij een grote groep mensen voorkomend']];
+let known=JSON.parse(localStorage.getItem('nl_known')||'{}');
+let uid=0,fcCards=[],fcIdx=0,fcFlipped=false,fcFilter='all';
+let qItems=[],qIdx=0,qScore=0,qAnswered=false,qFilter='all';
+let dWords=[],dIdx=0,dScore=0,dWrong=[];
+function saveKnown(){localStorage.setItem('nl_known',JSON.stringify(known));}
+function sw(name,el){
+document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+document.getElementById('view-'+name).classList.add('active');
+el.classList.add('active');
+if(name==='home')renderHome();
+if(name==='flashcards')initFC();
+if(name==='quiz')initQ();
+if(name==='dictee')initDictee();
+}
+function renderHome(){
+const totConcepts=chapters.reduce((s,c)=>s+c.concepts.length,0);
+const knownCount=Object.values(known).filter(Boolean).length;
+const knownPct=Math.round((knownCount/totConcepts)*100);
+const quizBest=parseInt(localStorage.getItem('nl_quizbest')||'0');
+const dicteeScore=parseInt(localStorage.getItem('nl_dictee_best')||'0');
+// Per-chapter stats
+const chStats=chapters.map(ch=>{
+const total=ch.concepts.length;
+const cnt=ch.concepts.filter(c=>known[ch.id+'_'+c.t]).length;
+return {id:ch.id,label:ch.label,icon:ch.icon,color:ch.color,total,cnt,pct:Math.round((cnt/total)*100)};
+});
+// Determine step states
+const theoriePct=knownPct;
+const theorieDone=theoriePct>=80;
+const quizDone=quizBest>=70;
+const dicteeDone=dicteeScore>=80;
+const allDone=theorieDone&&quizDone&&dicteeDone;
+// Determine active step
+let activeStep=0;
+if(theoriePct>0&&!theorieDone) activeStep=0;
+else if(theorieDone&&!quizDone) activeStep=1;
+else if(quizDone&&!dicteeDone) activeStep=2;
+else if(allDone) activeStep=3;
+// Update title
+if(allDone) document.getElementById('home-title').innerHTML='Je bent er<br>klaar voor! 🎉';
+else if(theoriePct===0) document.getElementById('home-title').innerHTML='Klaar voor<br>je toets?';
+else document.getElementById('home-title').innerHTML='Goed bezig,<br>Maher!';
+const steps=[
+{
+icon: theorieDone?'✓':'📖',
+title: 'Stap 1 — Theorie leren',
+badge: theorieDone?'Klaar':theoriePct>0?'Bezig':'Nog te doen',
+badgeCls: theorieDone?'badge-done':theoriePct>0?'badge-active':'badge-todo',
+state: theorieDone?'done':theoriePct>0?'active':'todo',
+sub: theorieDone?'Je hebt alle begrippen doorgenomen. Goed werk!':'Lees de theorie en markeer begrippen als je ze kent. Gebruik de Theorie-pagina.',
+showChapters: true,
+btnLabel: theorieDone?'Herhalen':'Theorie lezen →',
+btnCls: theorieDone?'jbtn':'jbtn primary',
+btnAction: "sw('theorie',document.querySelectorAll('.nb')[1])",
+},
+{
+icon: quizDone?'✓':'🧠',
+title: 'Stap 2 — Quiz doen',
+badge: quizDone?'Klaar':theorieDone?'Aan de beurt':'Wacht op stap 1',
+badgeCls: quizDone?'badge-done':theorieDone?'badge-active':'badge-todo',
+state: quizDone?'done':theorieDone?'active':'todo',
+sub: quizDone?`Je beste score is ${quizBest}% — goed gedaan!`:'Test je kennis met de quiz. Je haalt stap 2 als je 70% of meer scoort.',
+showProgress: quizDone||theorieDone,
+progressPct: quizBest,
+progressColor: quizBest>=70?'var(--green)':quizBest>=50?'var(--amber)':'var(--accent)',
+progressLabel: `Beste score: ${quizBest}%`,
+btnLabel: quizDone?'Opnieuw doen':'Quiz starten →',
+btnCls: quizDone?'jbtn':'jbtn primary',
+btnAction: "sw('quiz',document.querySelectorAll('.nb')[3])",
+},
+{
+icon: dicteeDone?'✓':'🔤',
+title: 'Stap 3 — Dictee oefenen',
+badge: dicteeDone?'Klaar':quizDone?'Aan de beurt':'Wacht op stap 2',
+badgeCls: dicteeDone?'badge-done':quizDone?'badge-active':'badge-todo',
+state: dicteeDone?'done':quizDone?'active':'todo',
+sub: dicteeDone?`Je hebt de dicteewoorden onder de knie!`:'Oefen de 20 dicteewoorden. Je haalt stap 3 als je 80% of meer scoort.',
+showProgress: dicteeDone||quizDone,
+progressPct: dicteeScore,
+progressColor: dicteeScore>=80?'var(--green)':dicteeScore>=50?'var(--amber)':'var(--accent)',
+progressLabel: `Beste score: ${dicteeScore}%`,
+btnLabel: dicteeDone?'Opnieuw oefenen':'Dictee oefenen →',
+btnCls: dicteeDone?'jbtn':'jbtn primary',
+btnAction: "sw('dictee',document.querySelectorAll('.nb')[4])",
+},
+];
+const container=document.getElementById('journey');
+container.className='journey';
+let html='';
+steps.forEach((step,i)=>{
+const isDone=step.state==='done';
+const isActive=step.state==='active'||(!isDone&&i===activeStep&&!allDone);
+const isTodo=!isDone&&!isActive;
+const dotCls=isDone?'jdot done':isActive?'jdot active':'jdot';
+const dotContent=isDone?'✓':step.icon;
+const isLast=i===steps.length-1;
+const connCls=isDone?'jconnect done':'jconnect';
+let chapHtml='';
+if(step.showChapters){
+chapHtml='<div class="jcard-chapters">';
+chStats.forEach(ch=>{
+chapHtml+=`<div class="jch-row">
+<span class="jch-icon">${ch.icon}</span>
+<span class="jch-name">${ch.label}</span>
+<div class="jch-pbar-bg"><div class="jch-pbar-fill" style="width:${ch.pct}%;background:${ch.color}"></div></div>
+<span class="jch-pct">${ch.pct}%</span>
+</div>`;
+});
+chapHtml+='</div>';
+}
+let progressHtml='';
+if(step.showProgress){
+progressHtml=`<div class="jcard-progress">
+<div class="jcard-pbar-bg"><div class="jcard-pbar-fill" style="width:${step.progressPct}%;background:${step.progressColor}"></div></div>
+<div class="jcard-pct">${step.progressLabel}</div>
+</div>`;
+}
+const cardCls=isDone?'jcard done-card':isActive?'jcard active-card':'jcard';
+const opacity=isTodo?'opacity:.55':'';
+html+=`<div class="jstep">
+<div class="jline">
+<div class="${dotCls}">${isDone?'✓':step.icon}</div>
+${!isLast?`<div class="${connCls}"></div>`:''}
+</div>
+<div class="jcontent" style="${opacity}">
+<div class="${cardCls}">
+<div class="jcard-head">
+<div class="jcard-title">${step.title}</div>
+<span class="jcard-badge ${step.badgeCls}">${step.badge}</span>
+</div>
+<div class="jcard-sub">${step.sub}</div>
+${chapHtml}
+${progressHtml}
+<button class="${step.btnCls}" onclick="${step.btnAction}">${step.btnLabel}</button>
+</div>
+</div>
+</div>`;
+});
+// Finish
+const finishOpacity=allDone?'':'opacity:.4';
+const finishDotCls=allDone?'jdot done':'jdot';
+html+=`<div class="jstep">
+<div class="jline"><div class="${finishDotCls}">${allDone?'🏆':'🎯'}</div></div>
+<div class="jcontent" style="${finishOpacity}">
+<div class="${allDone?'finish-card jcard done-card':'jcard'}">
+<div class="finish-title">${allDone?'Klaar voor de toets! 🎉':'Finish'}</div>
+<div class="finish-sub">${allDone?'Je hebt alle stappen afgerond. Succes morgen!':'Rond alle stappen af om hier te komen.'}</div>
+${allDone?`<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+<button class="jbtn" onclick="sw('theorie',document.querySelectorAll('.nb')[1])">Alles herhalen</button>
+<button class="jbtn primary" onclick="sw('quiz',document.querySelectorAll('.nb')[3])">Laatste quiz</button>
+</div>`:''}
+</div>
+</div>
+</div>`;
+container.innerHTML=html;
+}
+function buildTheorie(){
+const c=document.getElementById('tc');
+chapters.forEach(ch=>{
+const sec=document.createElement('div');sec.className='ch-sec';sec.dataset.chid=ch.id;
+sec.innerHTML=`<div class="slabel">${ch.label}</div>`;
+ch.concepts.forEach(con=>{
+const k=ch.id+'_'+con.t;const isK=!!known[k];
+const el=document.createElement('div');el.className='concept'+(isK?' known':'');
+el.dataset.key=k;el.dataset.s=(con.t+' '+(con.d||'')+' '+(con.tip||'')+' '+(con.ex||'')).toLowerCase().replace(/<[^>]+>/g,'');
+const kid='k'+(uid++);
+let body=con.d||'';
+if(con.tip) body+=`<div class="tip"><strong>Tip:</strong> ${con.tip}</div>`;
+if(con.ex) body+=`<div class="example"><strong>Voorbeeld:</strong> ${con.ex}</div>`;
+if(con.illus&&ILLUS[con.illus]) body+=`<div class="illus">${ILLUS[con.illus]}</div>`;
+body+=`<button class="mark-known${isK?' marked':''}" data-key="${k}" onclick="toggleKnown(event,'${k}',this)">${isK?'Gekend ✓':'Markeer als gekend'}</button>`;
+el.innerHTML=`<div class="ch2"><span class="cicon">${con.icon||''}</span><span class="tag ${ch.tag}">${ch.label}</span><span class="cterm">${con.t}</span><span class="known-dot"></span><span class="cchev" id="v${kid}">›</span></div><div class="cbody" id="b${kid}">${body}</div>`;
+el.addEventListener('click',e=>{
+if(e.target.classList.contains('mark-known'))return;
+const body=document.getElementById('b'+kid);
+const chev=document.getElementById('v'+kid);
+body.classList.toggle('open');chev.classList.toggle('open');
+if(body.classList.contains('open')){
+const kc=body.querySelector('[data-kofschip]');
+if(kc&&!kc.dataset.built){kc.dataset.built='1';buildKofschip(kc);}
+}
+});
+sec.appendChild(el);
+});
+c.appendChild(sec);
+});
+document.getElementById('theory-search').addEventListener('input',function(){
+const q=this.value.toLowerCase();
+document.querySelectorAll('.concept').forEach(el=>{el.style.display=(!q||el.dataset.s.includes(q))?'':'none';});
+document.querySelectorAll('.ch-sec').forEach(sec=>{sec.querySelector('.slabel').style.display=[...sec.querySelectorAll('.concept')].some(el=>el.style.display!=='none')||!q?'':'none';});
+});
+}
+function toggleKnown(e,key,btn){
+e.stopPropagation();known[key]=!known[key];saveKnown();
+btn.closest('.concept').classList.toggle('known',!!known[key]);
+btn.textContent=known[key]?'Gekend ✓':'Markeer als gekend';
+btn.classList.toggle('marked',!!known[key]);
+}
+function buildFCFilter(){
+const el=document.getElementById('fcfb');
+[{id:'all',l:'Alles'},...chapters.map(c=>({id:c.id,l:c.label}))].forEach(o=>{
+const b=document.createElement('button');b.className='fb'+(o.id==='all'?' active':'');b.dataset.id=o.id;b.textContent=o.l;
+b.addEventListener('click',()=>{el.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');fcFilter=o.id;initFC();});
+el.appendChild(b);
+});
+}
+function buildQFilter(){
+const el=document.getElementById('qfb2');
+[{id:'all',l:'Alles'},...chapters.map(c=>({id:c.id,l:c.label}))].forEach(o=>{
+const b=document.createElement('button');b.className='fb'+(o.id==='all'?' active':'');b.textContent=o.l;
+b.addEventListener('click',()=>{el.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');qFilter=o.id;initQ();});
+el.appendChild(b);
+});
+}
+function getCards(){let all=[];chapters.forEach(ch=>{if(fcFilter==='all'||fcFilter===ch.id)ch.concepts.forEach(c=>all.push({t:c.t,d:c.d+(c.tip?`<div class="tip" style="margin-top:8px;font-size:12px">💡 ${c.tip}</div>`:'')+( c.ex?`<div class="example" style="margin-top:6px;font-size:12px">${c.ex}</div>`:''),k:ch.id+'_'+c.t}));});return all.sort(()=>Math.random()-.5);}
+function initFC(){fcCards=getCards();fcIdx=0;fcFlipped=false;renderFC();}
+function shuffleFC(){initFC();}
+function renderFC(){
+const area=document.getElementById('fca2'),total=fcCards.length;
+if(!total){area.innerHTML='<p style="color:var(--muted);font-size:14px">Geen kaarten.</p>';return;}
+if(fcIdx>=total){area.innerHTML=`<div class="fcdone"><div class="big">${total}/${total}</div><p>Je hebt alle kaarten gezien!</p><button class="btn" onclick="initFC()">Opnieuw</button></div>`;document.getElementById('fcc2').textContent='';document.getElementById('fcp').style.width='100%';return;}
+const card=fcCards[fcIdx];const isK=!!known[card.k];
+document.getElementById('fcc2').textContent=`${fcIdx+1} / ${total}`;
+document.getElementById('fcp').style.width=Math.round((fcIdx/total)*100)+'%';
+document.getElementById('fca2').innerHTML=`<div class="fccard" id="fcm" onclick="flipFC()" ${isK?'style="border-left:3px solid var(--green)"':''}><div class="fcside" id="fcs">Begrip</div><div class="fcterm">${card.t}</div><div class="fcdef" id="fcd">${card.d}</div><div class="fchint" id="fch">Tik om te onthullen</div></div><div class="fcbtns" id="fcb" style="display:none"><button class="fca retry" onclick="nextFC(false)">Nog niet</button><button class="fca knew" onclick="nextFC(true)">Ik wist het ✓</button></div>`;
+fcFlipped=false;
+}
+function flipFC(){if(fcFlipped)return;fcFlipped=true;document.getElementById('fcd').classList.add('show');document.getElementById('fcs').textContent='Uitleg';document.getElementById('fch').style.display='none';document.getElementById('fcb').style.display='flex';}
+function nextFC(knew){const card=fcCards[fcIdx];if(knew){known[card.k]=true;saveKnown();}else fcCards.push(fcCards[fcIdx]);fcIdx++;renderFC();}
+function initQ(){let pool=qFilter==='all'?[...qq]:qq.filter(q=>q.ch===qFilter);qItems=pool.sort(()=>Math.random()-.5).slice(0,Math.min(10,pool.length));qIdx=0;qScore=0;qAnswered=false;renderQ();}
+function renderQ(){
+const area=document.getElementById('qa'),total=qItems.length;
+if(!total){area.innerHTML='<p style="color:var(--muted);font-size:14px">Geen vragen.</p>';return;}
+if(qIdx>=total){const pct=Math.round((qScore/total)*100);const prev=parseInt(localStorage.getItem('nl_quizbest')||'0');if(pct>prev)localStorage.setItem('nl_quizbest',pct);const msg=pct>=80?'Uitstekend! Je bent er klaar voor 💪':pct>=60?'Goed bezig! Nog even herhalen.':'Blijf oefenen!';area.innerHTML=`<div class="qresult"><div class="qsb">${qScore}/${total}</div><div class="qsp">${pct}% · ${msg}</div><button class="btn" onclick="initQ()">Opnieuw</button></div>`;return;}
+const item=qItems[qIdx];qAnswered=false;
+area.innerHTML=`<div class="qhr"><span class="qnum">Vraag ${qIdx+1} van ${total}</span><span class="qscore">${qScore} goed</span></div><div class="pbar"><div class="pfill" style="width:${Math.round((qIdx/total)*100)}%"></div></div><div class="qq">${item.q}</div><div class="qopts">${item.o.map((o,i)=>`<button class="qopt" onclick="answerQ(${i})" id="qo${i}">${o}</button>`).join('')}</div><div class="qfb" id="qf"></div><button class="qnext" id="qn" onclick="nextQ()">Volgende →</button>`;
+}
+function answerQ(i){if(qAnswered)return;qAnswered=true;const item=qItems[qIdx];document.querySelectorAll('.qopt').forEach(o=>o.disabled=true);document.getElementById('qo'+item.a).classList.add('correct');const fb=document.getElementById('qf');if(i===item.a){qScore++;fb.textContent='Goed! '+item.e;fb.className='qfb show ok';}else{document.getElementById('qo'+i).classList.add('wrong');fb.textContent='Niet helemaal. '+item.e;fb.className='qfb show nok';}document.getElementById('qn').classList.add('show');}
+function nextQ(){qIdx++;renderQ();}
+let dRetryNeeded=0,dRetryDone=0;
+function initDictee(){
+dWords=[...dictee].sort(()=>Math.random()-.5);
+dIdx=0;dScore=0;dWrong=[];dRetryNeeded=0;dRetryDone=0;
+renderDictee();
+}
+function renderDictee(){
+const total=dWords.length;
+if(dIdx>=total){
+const pct=Math.round((dScore/total)*100);
+document.getElementById('dwd').textContent='';
+document.getElementById('dh').textContent='';
+document.getElementById('dp2').innerHTML='';
+document.getElementById('di').style.display='none';
+document.getElementById('dfb').textContent='';
+document.getElementById('ds').textContent='';
+const prev=parseInt(localStorage.getItem('nl_dictee_best')||'0');
+if(pct>prev)localStorage.setItem('nl_dictee_best',pct);
+document.getElementById('dbtns').innerHTML=`<div style="text-align:center;width:100%">
+<div style="font-family:'Georgia',serif;font-size:48px;font-weight:700;margin-bottom:8px">${dScore}/${total}</div>
+<div style="font-size:15px;color:var(--muted);margin-bottom:20px">${pct}% goed${dWrong.length?' · Fout: '+dWrong.join(', '):''}</div>
+<button class="btn" onclick="initDictee()">Opnieuw</button>
+</div>`;
+return;
+}
+const word=dWords[dIdx];
+const isRetry=dRetryNeeded>0;
+// Progress dots
+document.getElementById('dp2').innerHTML=dWords.map((_,i)=>`<div class="dp${i===dIdx?' cur':i<dIdx?(dWrong.includes(dWords[i])?' nok2':' ok2'):''}"></div>`).join('');
+// Show word briefly then hide
+const wdEl=document.getElementById('dwd');
+wdEl.textContent=word;
+wdEl.classList.remove('hidden');
+setTimeout(()=>{ wdEl.classList.add('hidden'); }, 1200);
+// Hint text
+const hintEl=document.getElementById('dh');
+if(isRetry){
+hintEl.innerHTML=`<span style="color:var(--red);font-weight:500">Fout! Typ dit woord ${3-dRetryDone}x correct om door te gaan</span>`;
+} else {
+hintEl.textContent=`${dIdx+1} van ${total} · onthoud het woord en typ het uit je hoofd`;
+}
+// Retry pips
+let pipsHtml='';
+if(isRetry){
+pipsHtml='<div class="retry-pips">';
+for(let i=0;i<3;i++) pipsHtml+=`<div class="retry-pip${i<dRetryDone?' done':i===dRetryDone?' cur':''}"></div>`;
+pipsHtml+='</div>';
+}
+const inp=document.getElementById('di');
+inp.style.display='block';
+inp.value='';
+inp.className='di';
+setTimeout(()=>inp.focus(), 100);
+document.getElementById('dfb').textContent='';
+document.getElementById('dfb').className='dfb';
+document.getElementById('ds').innerHTML=`Score: ${dScore}/${dIdx}${pipsHtml}`;
+document.getElementById('dbtns').innerHTML=`<button class="btn primary" onclick="checkDictee()">Controleer</button>`;
+inp.onkeydown=e=>{if(e.key==='Enter')checkDictee();};
+}
+function checkDictee(){
+const word=dWords[dIdx];
+const inp=document.getElementById('di');
+const ans=inp.value.trim().toLowerCase();
+const fb=document.getElementById('dfb');
+const isRetry=dRetryNeeded>0;
+if(ans===word.toLowerCase()){
+inp.className='di correct';
+if(isRetry){
+dRetryDone++;
+if(dRetryDone>=3){
+fb.textContent='Woord geleerd! ✓';fb.className='dfb ok';
+dRetryNeeded=0;dRetryDone=0;
+setTimeout(()=>{dIdx++;renderDictee();},700);
+} else {
+fb.textContent=`Goed! Nog ${3-dRetryDone}x ✓`;fb.className='dfb ok';
+setTimeout(()=>{renderDictee();},600);
+}
+} else {
+fb.textContent='Goed! ✓';fb.className='dfb ok';
+dScore++;
+setTimeout(()=>{dIdx++;renderDictee();},700);
+}
+} else {
+inp.className='di wrong';
+fb.innerHTML='Fout — het is: <strong>'+word+'</strong> · typ dit woord 3x correct';
+fb.className='dfb nok';
+if(!dWrong.includes(word))dWrong.push(word);
+dRetryNeeded=3;
+dRetryDone=0;
+setTimeout(()=>{renderDictee();},1200);
+}
+}
+function skipDictee(){
+if(!dWrong.includes(dWords[dIdx]))dWrong.push(dWords[dIdx]);
+dIdx++;renderDictee();
+}
+function fw(sid,lid,data){const q=document.getElementById(sid).value.toLowerCase();const rows=data.filter(r=>r[0].toLowerCase().includes(q)||r[1].toLowerCase().includes(q));document.getElementById(lid).innerHTML=rows.length?rows.map(r=>`<div class="wrow"><span class="wt">${r[0]}</span><span class="wm">${r[1]}</span></div>`).join(''):'<p style="color:var(--hint);font-size:14px;padding:10px 4px">Geen resultaten.</p>';}
+function rl(id,d){document.getElementById(id).innerHTML=d.map(r=>`<div class="wrow"><span class="wt">${r[0]}</span><span class="wm">${r[1]}</span></div>`).join('');}
+function buildKofschip(container){
+const letters=[{l:"'T",t:'x'},{l:'K',t:'te'},{l:'o',t:'de'},{l:'F',t:'te'},{l:'S',t:'te'},{l:'C',t:'te'},{l:'H',t:'te'},{l:'i',t:'de'},{l:'P',t:'te'},{l:' ',t:'sp'},{l:'X',t:'te'}];
+const exs=[{w:'bedanken',stem:'bedank',last:'k',ikv:'bedank',vt:'bedankte',type:'te'},{w:'relaxen',stem:'relax',last:'x',ikv:'relax',vt:'relaxte',type:'te'},{w:'fietsen',stem:'fiets',last:'s',ikv:'fiets',vt:'fietste',type:'te'},{w:'koken',stem:'kook',last:'k',ikv:'kook',vt:'kookte',type:'te'},{w:'lachen',stem:'lach',last:'ch',ikv:'lach',vt:'lachte',type:'te'},{w:'gooien',stem:'gooi',last:'i',ikv:'gooi',vt:'gooide',type:'de'},{w:'verhuizen',stem:'verhuiz',last:'z',ikv:'verhuis',vt:'verhuisde',type:'de'},{w:'leven',stem:'leef',last:'f',ikv:'leef',vt:'leefde',type:'te'},{w:'bouwen',stem:'bouw',last:'w',ikv:'bouw',vt:'bouwde',type:'de'}];
+const kof='tkfschpx';
+const res=container.querySelector('.kl-res');
+const lr=container.querySelector('.kl-row');
+const er=container.querySelector('.kl-exrow');
+if(!res||!lr||!er)return;
+function showEx(ex){
+const isTe=ex.type==='te',cl=isTe?'color:#1A3D63':'color:#444441',end=isTe?'-te(n)':'-de(n)';
+res.innerHTML='<strong style="'+cl+'">'+ex.w+'</strong> → stam: <strong>'+ex.stem+'</strong> · laatste letter: <strong>'+ex.last+'</strong><br>'+(kof.includes(ex.last.toLowerCase())?'In \'T KoFSCHiP X':'Niet in \'T KoFSCHiP X')+' → <strong style="'+cl+'">'+end+'</strong><br>Ik-vorm: <strong>'+ex.ikv+'</strong> + '+end.replace('(n)','')+' = <strong style="'+cl+'">'+ex.vt+'</strong>';
+}
+letters.forEach(l=>{
+if(l.t==='sp'){const s=document.createElement('div');s.style.width='8px';lr.appendChild(s);return;}
+const el=document.createElement('div');
+el.style.cssText='width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:500;border:1.5px solid;font-family:system-ui,-apple-system,sans-serif;user-select:none;'+(l.t==='te'?'background:#E8F0FA;color:#1A3D63;border-color:#185FA5;cursor:pointer':'background:#F0EEE7;color:#ACA89E;border-color:#E3DFD5');
+el.textContent=l.l;
+if(l.t==='te'){
+el.addEventListener('click',()=>{
+lr.querySelectorAll('[data-kl]').forEach(x=>x.style.transform='');
+el.style.transform='scale(1.12)';
+const m=exs.find(e=>e.last.toLowerCase()===l.l.toLowerCase());
+if(m)showEx(m);else res.innerHTML='Letter <strong>'+l.l+'</strong> staat in \'T KoFSCHiP X → gebruik <strong style="color:#1A3D63">-te(n)</strong>';
+});
+el.setAttribute('data-kl','1');
+}
+lr.appendChild(el);
+});
+exs.forEach(ex=>{
+const b=document.createElement('button');
+b.style.cssText='font-size:12px;padding:4px 10px;border-radius:7px;cursor:pointer;border:1px solid #E3DFD5;background:#fff;color:#18170F;font-family:system-ui,-apple-system,sans-serif;transition:all .15s';
+b.textContent=ex.w;
+b.addEventListener('click',()=>showEx(ex));
+er.appendChild(b);
+});
+}
+buildTheorie();buildFCFilter();buildQFilter();
+renderHome();rl('sl',stw);rl('wl',wl35);
+document.getElementById('ss').addEventListener('input',()=>fw('ss','sl',stw));
+document.getElementById('ws').addEventListener('input',()=>fw('ws','wl',wl35));
+</script>
+</body>
+</html>
